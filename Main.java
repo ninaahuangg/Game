@@ -16,5 +16,8 @@ public static void main(String[] args){
     two.getLevel(2).setPoints(100);
     two.getLevel(3).setPoints(500);
     System.out.println(two.getScore());
+    Game three = new Game();
+    three.getLevel(1).reachGoal();
+    three.getLevel(1).setPoints(200);
     }
 }
