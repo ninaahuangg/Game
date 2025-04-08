@@ -19,5 +19,19 @@ public static void main(String[] args){
     Game three = new Game();
     three.getLevel(1).reachGoal();
     three.getLevel(1).setPoints(200);
+    three.getLevel(2).setPoints(100);
+    three.getLevel(3).reachGoal();
+    three.getLevel(3).setPoints(500);
+    three.makeBonus();
+    System.out.println(three.getScore());
+    Game four = new Game();
+    four.getLevel(1).setPoints(200);
+    four.getLevel(2).reachGoal();
+    four.getLevel(2).setPoints(100);
+    four.getLevel(3).reachGoal();
+    four.getLevel(3).setPoints(500);
+    System.out.println(four.getScore());
+    Game five = new Game();
+    System.out.println(five.playManyTimes(4));
     }
 }
